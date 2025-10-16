@@ -1,0 +1,359 @@
+---
+title: "Nível de Serviço e KPIs"
+subtitle: "Logística de Transportes e Armazenagem"
+author: 
+  - <br></br>Renata Oliveira
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["default", "xaringan-themer.css"]
+    nature:
+      ratio: "16:9"
+      highlightLines: true
+      highlightStyle: solarized-light
+      countIncrementalSlides: false
+      slideNumberFormat: |
+         <div class="progress-bar-container">
+           <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+           </div>
+         </div>
+
+---
+
+```{r child = "setup.Rmd"}
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringan-editable, echo=FALSE}
+xaringanExtra::use_editable(expires = 1)
+```
+
+```{r xaringan-panelset, echo=FALSE, message=FALSE, warning=FALSE}
+xaringanExtra::use_panelset()
+```
+
+```{r xaringanExtra-clipboard, echo=FALSE}
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clipboard\"></i>",
+    success_text = "<i class=\"fa fa-check\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times-circle\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
+```
+
+```{r xaringan-fit-screen, echo=FALSE}
+xaringanExtra::use_fit_screen()
+```
+
+```{r xaringan-extra-styles, echo=FALSE}
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
+
+
+class: middle, inverse
+
+# Mensuração de Desempenho 
+
+---
+
+## KPIs
+
+KPIs (Key Performance Indicators) - um indicador de desempenho deve demonstrar claramente que ação deve ser tomada e quando deve ser tomada.
+
+- Os indicadores não podem ser individuais. 
+- Atenção para medidas conflitantes, que podem acentuar os problemas das áreas ao invés de resolvê-los.
+
+#### Quatro elementos fundamentais para medidas de desempenho
+- **Parceria** com fornecedores, clientes e pessoal interno
+- **Transferência** de poder para as pessoas das pontas
+- **Integração** das medidas, relatórios e melhoria de **desempenho**
+- **Conexão** das medidas de desempenho à **estratégia corporativa**
+
+---
+
+## O que medir?
+
+### Responsividade x eficiência
+
+- Eficiência - uso adequado de recursos   
+- Responsividade mensurada por indicadores do processo
+- Responsividade conforme percepção dos clientes
+
+---
+
+### Instalações
+
+**Métricas relacionadas à instalação**
+
+.midi[
+- Capacidade   
+- Utilização   
+- Tempo ocioso de processamento/preparação/parada   
+- Custo de produção por unidade    
+- Perda de qualidade   
+- Tempo de fluxo/ciclo teórico de produção   
+- Tempo de fluxo/ciclo médio real   
+- Eficiência de tempo de fluxo   
+- Variedade de produtos   
+- Contribuição de volume dos 20% maiores SKUs e clientes    
+- Tamanho médio de lote de produção   
+- Nível de serviço de produção   
+]
+
+---
+
+### Estoque
+
+**Métricas relacionadas a estoque**
+
+.midi[
+- Tempo cíclico
+- Estoque médio 
+- Giro de estoque 
+- Produtos com mais de um número específico de dias de estoque
+- Tamanho médio de lote de reposição
+- Estoque de segurança médio
+- Estoque sazonal
+- Taxa de atendimento
+- Fração de tempo sem estoque
+- Estoque obsoleto
+]
+
+---
+
+### Transporte
+
+**Métricas relacionadas a transporte**
+
+.midi[
+- Custo médio de transporte de recebimento   
+- Tamanho médio de recebimento   
+- Custo médio de transporte de recebimento por embarque   
+- Custo médio de transporte do embarque   
+- Tamanho médio de embarque   
+- Custo médio de transporte de envio por embarque   
+- Fração transportada por modo   
+]
+
+---
+
+### Informação
+
+**Métricas relacionadas à informação**
+
+.midi[
+- Horizonte de previsão   
+- Frequência de atualização   
+- Erro de previsão    
+- Fatores sazonais   
+- Razão entre variabilidade da demanda e variabilidade do pedido   
+]
+
+---
+
+### Sourcing
+
+**Métricas relacionadas a Sourcing**
+
+.midi[
+- Dias pendentes de contas a pagar  
+- Preço médio de compra  
+- Faixa de preço de compra   
+- Quantidade média de compra   
+- Qualidade do fornecimento   
+- Tempo de execução de fornecimento   
+- Percentagem de entregas de imediato   
+- Confiabilidade do fornecedor   
+]
+
+---
+
+### Precificação
+
+**Métricas relacionadas à precificação**
+
+.midi[
+- Margem de lucro   
+- Dias de vendas pendentes   
+- Custo fixo incremental por pedido   
+- Custo variável incremental por unidade   
+- Preço médio de venda   
+- Tamanho médio de pedido   
+- Faixa de preço de venda   
+- Faixa de vendas periódicas   
+]
+
+---
+
+class: center, middle
+
+## Serviço ao cliente
+
+---
+
+## Serviço ao cliente
+
+Todas as atividades necessárias para receber, aceitar, processar, enviar e faturar os pedidos dos clientes, controlar para que as atividades possam ser executadas em conformidade com o planejamento e assegurar-se que o cliente está satisfeito. O objetivo do serviço ao cliente é **CRIAR VALOR** para o cliente.
+
+Os diferenciais competitivos nas operações logísticas são:
+
+- Vantagem em CUSTO    
+- Vantagem em VALOR
+
+
+---
+
+### Redução de custo
+- Realizando uma boa gestão de estoques   
+- Otimizando processos   
+- Melhorando a produtividade   
+- Introduzindo novas tecnologias   
+- Otimizando recursos   
+- Através da negociação com fornecedores   
+- Utilizando modos alternativos   
+- Otimizando utilização de espaços / transporte   
+
+---
+
+### Agregação de valor
+- Disponibilizando o produto no momento desejado   
+- Fazendo entregas rápidas   
+- Sendo consistente nas entregas ao cliente   
+- Aumentando a frequência de entrega   
+- Tornando fácil o processo de compras   
+- Disponibilizando informações confiáveis em tempo real   
+- Oferecendo flexibilidade; local entrega, horário, embalagem, serviços especiais   
+- Corrigindo rapidamente qualquer erro, ou reagindo a eventos não esperados   
+
+---
+
+> #Não há nenhum valor no produto ou serviço até estar nas mãos do cliente ou consumidor.
+
+
+---
+class: middle
+
+# INDICADORES PARA AVALIAÇÃO DE DESEMPENHO EM TRANSPORTES
+
+---
+
+## Indicadores para avaliação de desempenho em transportes
+
+- As estatísticas sobre os fluxos representam dados em termos físicos, que refletem o interesse de traduzir as atividades das empresas em termos monetários.
+
+- As estatísticas operacionais dos transportes registram por períodos estabelecidos (dia, decênio, quinzena, mês, ano), os resultados alcançados. 
+
+- Uma vez consolidadas (por veículo, fluxo, linha, rota, empresa etc) essas estatísticas são convertidas em informações, por meio dos indicadores de desempenho.
+
+---
+
+## Indicadores para avaliação de desempenho em transportes
+
+**Problemas que são trabalhados a partir de indicadores KPIs**
+
+a.	Especificação e avaliação de veículos   
+b.	Dimensionamento de frotas   
+c.	Operação de frotas   
+d.	Controle de custos operacionais no transporte   
+e.	Planejamento da manutenção   
+f.	Investimentos em transportes   
+
+---
+
+##	Unidades e indicadores em transportes
+
+**Objetivo:** medir os seguintes atributos
+
+- Previsão de demanda
+-	Produção (oferta) – Planejada/Programada/Realizada
+-	Desvios – Plan x Prog / Prog x Real
+-	Eficiência: A eficiência preocupa-se com os meios, com os métodos e procedimentos planejados e organizados a fim de assegurar uso adequado dos recursos disponíveis
+-	Eficácia: Capacidade da organização em cumprir as suas metas e objetivos previamente fixados.
+-	Efetividade: eficiência + eficácia
+-	Confiabilidade: índice de falhas
+
+---
+
+##	Unidades e indicadores em transportes
+
+**Objetivo:** medir os seguintes atributos
+
+-	Segurança operacional
+-	Produtividade: produção/recursos
+-	Economicidade: Característica da alternativa, mais econômica para a solução de determinado problema.
+-	Rentabilidade: lucro e lucratividade
+
+---
+
+##	Unidades e indicadores em transportes
+
+**Natureza dos indicadores**
+
+.pull-left[
+**Diretos simples**
+- veículos, viagens, passageiros, toneladas etc
+- MKBF – Mean kilometer between failure
+- Ocorrências absolutas de acidentes, avarias etc
+]
+
+.pull-right[
+**Diretos compostos**
+Caracterizar percursos realizados e tempos consumidos nas operações e seus períodos de realização. Veículos – carregados e vazios no período, pela extensão etc.
+]
+
+
+---
+**Unidades de medida mais comuns em transportes**
+- Tonelada (t)
+- Quilograma (kg)
+- Metro cúbico (m³)
+- Passageiro (pax)
+- Tonelada-quilômetro (tkm)
+- Passageiro-quilômetro (pkm)
+- Quilômetro (km)
+- Hora (h)
+- Litro (l)
+- Tonelada-hora (th)
+- Passageiro-hora (ph)
+- Quilômetro-hora (km/h)
+- Tonelada-quilômetro-hora (tkm/h)
+- Passageiro-quilômetro-hora (pkm/h)
+- Quilômetro-litro (km/l)
+- Tonelada-quilômetro-litro (tkm/l)
+- Passageiro-quilômetro-litro (pkm/l)
+
+
+
+
+	Produção – Toneladas, passageiros, tkm, pkm etc
+	Consumo – litros, m³, kWh etc
+	Custos – fixos, variáveis, totais, por unidade produzida etc
+12.2.3	Indicadores de produtividade
+	Produção por veículo, motorista, empregado, hora trabalhada etc
+12.2.4	Indicadores de eficiência
+	Produção por litro, m³, kWh etc
+	Produção por custo fixo, variável, total etc
+12.2.5	Indicadores de eficácia
+	Índices de pontualidade, regularidade, confiabilidade etc 
+
+
+
+---
+
+class: center, middle
+
+.larger[
+**DÚVIDAS?**
+]
